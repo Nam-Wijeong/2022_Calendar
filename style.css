@@ -1,0 +1,42 @@
+body {
+  background-image: url(image/lion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+table {
+  margin: 0 30px;
+  padding: 10px;
+  display: inline;
+}
+/* 
+table,
+tr,
+th,
+td {
+} */
+
+.this__month {
+  font-size: 36px;
+}
+
+th {
+  font-size: 16px;
+}
+
+th:nth-child(1),
+td:nth-child(1),
+.children__date,
+.memorial__day {
+  color: red;
+}
+
+td {
+  padding: 16px 10px;
+  font-size: 13px;
+}
+
+.two__date {
+  font-size: 10px;
+}
