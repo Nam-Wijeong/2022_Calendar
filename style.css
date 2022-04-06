@@ -1,24 +1,60 @@
+* {
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 body {
-  background-image: url(image/lion.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #ede7f6;
+}
+.title {
+  color: white;
+  background: rgb(214, 191, 189);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 191, 189, 0.9612438725490196) 7%,
+    rgba(137, 143, 221, 0.9612438725490196) 48%,
+    rgba(221, 123, 161, 0.9780505952380952) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+.this_year {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.this_goal {
+  font-size: 28px;
+}
+
+.calendar {
+  margin-bottom: 30px;
 }
 
 table {
-  margin: 0 30px;
+  margin: 0 34px;
   padding: 10px;
   display: inline;
 }
-/* 
-table,
-tr,
-th,
-td {
-} */
 
 .this__month {
-  font-size: 36px;
+  color: #898fdd;
+  font-size: 30px;
+  margin-bottom: 32px;
 }
 
 th {
@@ -33,10 +69,25 @@ td:nth-child(1),
 }
 
 td {
-  padding: 16px 10px;
+  text-align: center;
+  padding: 14px 10px;
   font-size: 13px;
 }
 
-.two__date {
-  font-size: 10px;
+.birthday {
+  font-size: 20px;
+  transition: all 200ms ease-in;
+}
+
+.birthday:hover {
+  transform: scale(1.8);
+}
+
+.christmas {
+  font-size: 20px;
+  transition: all 200ms ease-in;
+}
+
+.christmas:hover {
+  transform: scale(1.8);
 }
